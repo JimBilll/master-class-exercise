@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>Edinburgh Duck Appreciation Society - Home</title>
-        <link rel="stylesheet" href="good-page.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="overlay">
             <button onclick="document.getElementById('overlay').style.display = 'none'" aria-hidden="true">Show</button>
         </div>
-        <nav>
+        <nav role="navigation">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">News</a></li>
@@ -16,22 +16,24 @@
                 <li><a href="">About</a></li>
             </ul>
         </nav>
-        <div>
-            <h1>Welcome to the Edinburgh Duck Appreciation Society</h1>
-            <img id="duck-image" src="./assets/Mallard.png" alt="Mallard duck in water.">
-        </div>
-        <div class="login-area">
-            <h1>Login</h1>
-            <div class="login-field">
-                <label id="username-field" class="field-label">Username</label>
-                <input for="username-field">
+        <div role="main">
+            <div>
+                <h1>Welcome to the Edinburgh Duck Appreciation Society</h1>
+                <img id="duck-image" src="./assets/Mallard.png" alt="Mallard duck in water.">
             </div>
-            <div class="login-field">
-                <label id="password-field" class="field-label">Password</label>
-                <input for="password-field">
+            <div class="login-area">
+                <h1>Login</h1>
+                <div class="login-field">
+                    <label for="username-field" class="field-label">Username</label>
+                    <input id="username-field">
+                </div>
+                <div class="login-field">
+                    <label for="password-field" class="field-label">Password</label>
+                    <input id="password-field">
+                </div>
+                <button>Log In</button>
+                <a href="">Forgot password?</a>
             </div>
-            <button>Log In</button>
-            <a href="">Forgot password?</a>
         </div>
         <footer>
             The Edinburgh Duck Appreciation Society is a fictitious organisation which promotes good web accessibility practices
