@@ -1,42 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Edinburgh Duck Appreciation Society - Home</title>
+        <title>Masterclass Site</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="overlay">
-            <button onclick="document.getElementById('overlay').style.display = 'none'" aria-hidden="true">Show</button>
-        </div>
-        <nav role="navigation">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About</a></li>
-            </ul>
-        </nav>
-        <div role="main">
-            <div>
-                <h1>Welcome to the Edinburgh Duck Appreciation Society</h1>
-                <img id="duck-image" src="./assets/Mallard.png" alt="Mallard duck in water.">
-            </div>
-            <div class="login-area">
-                <h1>Login</h1>
-                <div class="login-field">
-                    <label for="username-field" class="field-label">Username</label>
-                    <input id="username-field">
-                </div>
-                <div class="login-field">
-                    <label for="password-field" class="field-label">Password</label>
-                    <input id="password-field">
-                </div>
-                <button>Log In</button>
-                <a href="">Forgot password?</a>
-            </div>
-        </div>
-        <footer>
-            The Edinburgh Duck Appreciation Society is a fictitious organisation which promotes good web accessibility practices
-        </footer>
+        <h1>Select page:</h1>
+        <button onclick="location.href='./good-page.html'" type="button">Good page</button>
+        <button onclick="location.href='./bad-page.html'" type="button">Bad page</button>
+        <button onclick="location.href='./exercise.html'" type="button">Exercise page</button>
     </body>
 </html>
