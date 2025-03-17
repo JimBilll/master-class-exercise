@@ -23,16 +23,18 @@
             </div>
             <div class="login-area">
                 <h1>Login</h1>
-                <div class="login-field">
-                    <label for="username-field" class="field-label">Username</label>
-                    <input id="username-field">
-                </div>
-                <div class="login-field">
-                    <label for="password-field" class="field-label">Password</label>
-                    <input id="password-field">
-                </div>
-                <button>Log In</button>
-                <a href="">Forgot password?</a>
+                <form>
+                    <div class="login-field">
+                        <label id="username-label" for="username-field" class="field-label">Username</label>
+                        <input id="username-field" aria-labelledby="username-label">
+                    </div>
+                    <div class="login-field">
+                        <label for="password-field" class="field-label">Password</label>
+                        <input id="password-field">
+                    </div>
+                    <button>Log In</button>
+                    <a href="">Forgot password?</a>
+                </form>
             </div>
         </div>
         <footer>
